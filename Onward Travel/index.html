@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en" class="home-html">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,300;0,400;0,500;0,700;1,500&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="scss/main.css" />
+    <!-- <link rel="icon" href="./logo/favicon.jpg" /> -->
+
+    <title>Onward | Your Travel Inspiration</title>
+  </head>
+  <body>
+    <!-- NAVIGATION -->
+    <nav class="navigation">
+      <a href="index.html" class="navigation__link">
+        <img
+          class="navigation__logo"
+          src="./logo/Asset 2 (2)@100x.png"
+          alt="Onward"
+        />
+      </a>
+      <ul class="navigation__list">
+        <li class="navigation__item">
+          <a href="page/discover.html" class="navigation__link">Discover</a>
+        </li>
+        <li class="navigation__item">
+          <a href="page/blog.html" class="navigation__link">Blog</a>
+        </li>
+        <li class="navigation__item">
+          <a href="page/contact.html" class="navigation__link">Contact</a>
+        </li>
+      </ul>
+    </nav>
+
+    <section class="home" id="home">
+      <!-- CARDS -->
+      <div class="carousel">
+        <div class="carousel__images">
+          <div class="carousel__item">
+            <figcaption class="carousel__item--text">Vietnam</figcaption>
+            <img
+              id="vietnam-card"
+              class="carousel__item--img"
+              src="./img/vietnam-small.jpg"
+              alt=""
+            />
+          </div>
+          <div class="carousel__item">
+            <figcaption class="carousel__item--text">Cambodia</figcaption>
+            <img
+              id="cambodia-card"
+              class="carousel__item--img"
+              src="./img/cambodia-small.jpg"
+              alt=""
+            />
+          </div>
+          <div class="carousel__item">
+            <figcaption class="carousel__item--text">Thailand</figcaption>
+            <img
+              id="thailand-card"
+              class="carousel__item--img"
+              src="./img/thailand-small.jpg"
+              alt=""
+            />
+          </div>
+          <div class="carousel__item">
+            <figcaption class="carousel__item--text">Bali</figcaption>
+            <img
+              id="bali-card"
+              class="carousel__item--img"
+              src="./img/bali-small.jpg"
+              alt=""
+            />
+          </div>
+        </div>
+      </div>
+      <div class="carousel__actions">
+        <button class="carousel__btn carousel__btn--prev" id="previous">
+          &lsaquo;
+        </button>
+        <button class="carousel__btn carousel__btn--next" id="next">
+          &rsaquo;
+        </button>
+      </div>
+
+      <!-- countries -->
+      <!-- BALI -->
+      <div class="header__background">
+        <div class="bali" id="bali">
+          <div class="hero">
+            <h1 class="hero__header">Bali</h1>
+            <p class="hero__text">
+              Beyond stunning beaches and magical temples, Bali has virtually
+              every kind of natural beauty. Glorious mountainous areas with lush
+              greenery, scenic lakes, gorgeous waterfalls, iconic rice fields,
+              flower gardens, gushing sacred rivers and secret canyons all make
+              up the island's landscape.
+            </p>
+            <!-- <a href=""
+              ><button class="hero__btn hero__btn--bali">Explore</button></a
+            > -->
+          </div>
+        </div>
+        <!-- VIETNAM -->
+        <div class="vietnam hide" id="vietnam">
+          <div class="hero">
+            <h1 class="hero__header">Vietnam</h1>
+            <p class="hero__text">
+              From foodies and beach hoppers to art and culture buffs and
+              adventure seekers, Vietnam has something to offer everyone. With
+              its 3,000 kilometers of tropical coastline, exquisite food and
+              fascinating culture, this amazing country is waiting to be
+              explored by the tourist hoards. Get ahead of the crowds and go
+              now; we list the reasons why.
+            </p>
+            <!-- <a href=""
+              ><button class="hero__btn hero__btn--vietnam">Explore</button></a
+            > -->
+          </div>
+        </div>
+        <!-- CAMBODIA -->
+        <div class="cambodia hide" id="cambodia">
+          <div class="hero">
+            <h1 class="hero__header">Cambodia</h1>
+            <p class="hero__text">
+              Enchanting landscapes, rich history and culture, as well as the
+              innate hospitality of its people – Cambodia has the lot. And it’s
+              what keeps visitors coming back time and again. Here are a few
+              more reasons why this Southeast Asian gem should be on every
+              traveller’s bucket list.
+            </p>
+            <!-- <a href=""
+              ><button class="hero__btn hero__btn--cambodia">Explore</button></a
+            > -->
+          </div>
+        </div>
+        <!-- THAILAND -->
+        <div class="thailand hide" id="thailand">
+          <div class="hero">
+            <h1 class="hero__header">Thailand</h1>
+            <p class="hero__text">
+              Thailand is home to an abundance of wildlife in its many national
+              parks, beaches, and mountainous terrain. Khao Yai National Park in
+              central Thailand is home to tigers, wild boars, and if visitors
+              are truly lucky they may even see an elephant or two.
+            </p>
+            <!-- <a href=""
+              ><button class="hero__btn hero__btn--thailand">Explore</button></a
+            > -->
+          </div>
+        </div>
+        <a href="./destinations/bali.html" id="hero-btn"
+          ><button class="hero__btn">Explore</button></a
+        >
+      </div>
+    </section>
+
+    <script src="js/app.js"></script>
+  </body>
+</html>
