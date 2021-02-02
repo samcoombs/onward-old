@@ -1,0 +1,83 @@
+.contact {
+  width: 80vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  margin-left: 20vw;
+  animation: appearFromLeft 1s;
+
+  &__header {
+    font-size: 10vh;
+    text-transform: uppercase;
+    color: $color-white;
+    letter-spacing: 1px;
+    margin-bottom: 5vh;
+  }
+
+  &__input {
+    height: 10vh;
+  }
+
+  &__label {
+    font-size: 2vh;
+    line-height: 3.5vh;
+    color: $color-white;
+  }
+
+  &__text-box {
+    border: none;
+    height: 5vh;
+    width: 40vw;
+    padding-left: 3px;
+    font-family: $default-font;
+    transition: all 0.2s ease;
+
+    &--msg {
+      border: none;
+      height: 15vh;
+      width: 40vw;
+      font-family: $default-font;
+      padding-top: 3px;
+      padding-left: 3px;
+      transition: all 0.2s;
+      &:focus {
+        border-right: 5px solid $color-green-1;
+        outline: none;
+        transition: all 0.2s;
+      }
+      &:invalid {
+        border-right: 5px solid $color-yellow-1;
+      }
+    }
+
+    &:focus {
+      border-right: 5px solid $color-green-1;
+      outline: none;
+    }
+
+    &:invalid {
+      border-right: 5px solid $color-yellow-1;
+    }
+  }
+
+  &__submit {
+    margin-top: 12vh;
+    height: 5rem;
+    width: 15rem;
+    border: $btn-border;
+    background: none;
+    color: $color-white;
+    font-family: $default-font;
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+
+    &:hover {
+      border: 2px solid $color-yellow-1;
+      color: $color-yellow-1;
+      cursor: pointer;
+    }
+  }
+}

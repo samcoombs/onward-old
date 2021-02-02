@@ -1,0 +1,76 @@
+.blog {
+  width: 60vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: $color-white;
+  margin-top: 15vh;
+  animation: appearFromBottom 1s 0.75s;
+  animation-fill-mode: backwards;
+
+  &__body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__section--header {
+    margin-top: 15vh;
+    padding-bottom: 0 !important; //to overwrite padding from the to-see section
+    animation: appear 1s;
+  }
+
+  &__heading {
+    font-style: italic;
+    font-size: 5vh;
+    font-weight: 600;
+    text-transform: uppercase;
+  }
+
+  &__subheading {
+    text-transform: uppercase;
+    font-size: 2vh;
+    font-weight: 300;
+    margin-top: 1vh;
+    margin-bottom: 1vh;
+  }
+
+  &__text {
+    margin-top: 1vh;
+    font-size: 2vh;
+    font-weight: 300;
+    letter-spacing: 0.5px;
+    line-height: 2.5vh;
+  }
+
+  &__read-more {
+    color: $color-yellow-1;
+    // text-decoration: none;
+    transition: all 0.3s ease;
+
+    &:hover {
+      color: $color-white;
+    }
+  }
+}
+
+.when-travel-opens {
+  background-image: url(../img/WhenTravelOpensUp.jpg);
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+.backpacking-cambodia {
+  background-image: url(../img/backpacking-cambodia-travel-guide.jpg);
+  width: 100%;
+  height: 50vh;
+  background-position: center;
+  background-size: cover;
+}
+
+@media only screen and (max-width: 665px) {
+  .blog {
+    width: 80vw;
+  }
+}
